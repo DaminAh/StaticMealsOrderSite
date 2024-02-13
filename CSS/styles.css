@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(34, 33, 33);
+}
+
+header {
+  height: 100px;
+  background: #0f0e0e;
+  font-family: "Montserrat", sans-serif;
+}
+nav ul {
+  display: flex;
+  color: orange;
+  padding: 30px 60px;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+nav ul li:nth-child(2) {
+  margin-right: 34px;
+}
+nav ul li:nth-child(n + 2):nth-child(-n + 3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/******Meal Item Cards******/
+.meals-info-container {
+  display: grid;
+  place-content: center;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.meals-info-container-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.meals-info-container h1 {
+  font-family: "Montserrat", sans-serif;
+  color: orange;
+  font-size: 4rem;
+}
+
+.meal-card-container {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.meal-card-item {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.item-img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-item-body {
+  margin: 0;
+  padding: 35px 15px 15px 15px;
+  text-align: center;
+  background: #ccc77a;
+}
+
+.card-item-body p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.card-item-body button {
+  background: orange;
+  padding: 10px 25px;
+  border-color: transparent;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-item-body button:hover {
+  background: #967841;
+}
