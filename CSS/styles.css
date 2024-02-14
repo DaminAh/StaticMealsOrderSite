@@ -21,6 +21,10 @@ nav ul {
   margin: 0;
 }
 
+nav a {
+  text-decoration: none;
+  color: orange;
+}
 nav ul li:first-child {
   margin-right: auto;
   font-weight: 600;
@@ -55,8 +59,10 @@ nav ul li:nth-child(n + 2):nth-child(-n + 3) {
 }
 
 .meal-card-container {
-  display: flex;
-  gap: 10px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -64,27 +70,26 @@ nav ul li:nth-child(n + 2):nth-child(-n + 3) {
 .meal-card-item {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  border: 1px solid transparent;
+  overflow: hidden;
   border-radius: 10px;
 }
 
 .item-img {
-  height: 350px;
+  height: 180px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 .card-item-body {
   margin: 0;
-  padding: 35px 15px 15px 15px;
+  padding: 20px 10px 10px 15px;
   text-align: center;
   background: #ccc77a;
 }
 
 .card-item-body p {
-  font-weight: 600;
-  font-size: 1.6rem;
+  font-weight: bold;
+  font-size: 1.3rem;
   margin-bottom: 8px;
 }
 
